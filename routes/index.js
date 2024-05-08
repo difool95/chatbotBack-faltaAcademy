@@ -8,7 +8,7 @@ const axios = require('axios');
 const mime = require('mime-types');
 const path = require('path');
 //const host = 'http://localhost:5000'
-const host = 'https://mouvmntchatbotback.onrender.com'
+const host = 'https://chatbotback-faltaacademy.onrender.com'
 /* GET home page. */
 router.post('/talk', function (req, res) {
   let language = req.body.language;
