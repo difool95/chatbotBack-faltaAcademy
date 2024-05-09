@@ -12,6 +12,8 @@ const host = 'https://chatbotback-faltaacademy.onrender.com'
 /* GET home page. */
 router.post('/talk', function (req, res) {
   let language = req.body.language;
+  console.log("language is");
+  console.log(language);
   textToSpeech(req.body.text, req.body.language, req.body.reset)
     .then(result => {
       let { blendData, filename, filena } = result;
